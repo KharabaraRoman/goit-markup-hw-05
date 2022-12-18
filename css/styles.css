@@ -487,7 +487,7 @@ p {
     font-family: var(--secondary-background);
     color: var(--buttons-color-hover);
     font-size: 18px;
-    font-weight: 800;  
+    font-weight: 800;
 }
 
 .footer-paragraph {
@@ -652,7 +652,9 @@ p {
 
 .portfolio-link {
     text-decoration: none;
+    
 }
+
 .filter-name {
     color: var(--secondary-text-color);
     font-family: var(--primary-font);
@@ -689,7 +691,37 @@ p {
     margin-bottom: 48px;
     margin-right: 24px;
     width: 360px;
-   
+}
+.box-slyde {
+    position: relative;
+    
+}
+.fon-style {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #4D5AE5;
+    left: 0;
+    top: 0;
+}
+.opacity {
+    opacity: 0;
+}
+.opacity:hover,
+.opacity:focus {
+    opacity: 1;
+    transition: 560ms opacity linear;
+}
+ 
+
+.content-slyde {
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 40px;
+    left: 32px;
+    z-index: 1;
+    color: white;
 }
 .portfolio-link {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -708,6 +740,52 @@ p {
 .portfolio-item-img:nth-child(3n) {
     margin-right: 0px;
 }
+
+/* -------------------backdrop-------------------- */
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    top: 0;
+    left: 0;
+}
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.modal {
+    position: absolute;
+    width: 408px;
+    height: 576px;
+    border-radius: 4px;
+    background-color: #FCFCFC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.close-svg {
+    width: 8px;
+    height: 8px;
+    width: 100%;
+    height: 100%;
+}
+.button-close {
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+    background-color: #E7E9FC;
+}
+
+
 
 
 
