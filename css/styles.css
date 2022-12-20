@@ -809,7 +809,6 @@ p {
 
 .portfolio-item-img:hover .box-slyde {
     transform: translateY(0);
-    
 }
 
 .portfolio-link:focus .box-slyde {
